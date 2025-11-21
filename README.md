@@ -73,20 +73,6 @@ kafka-topics.sh --create --topic orders --bootstrap-server localhost:9092 --part
 kafka-topics.sh --create --topic orders-dlq --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 
-## 📁 Project Structure
-
-```
-.
-├── producer.py           # Order producer implementation
-├── consumer.py           # Order consumer implementation
-├── dlq_handler.py        # Dead Letter Queue handler
-├── order_schema.avsc     # Avro schema definition
-├── requirements.txt      # Python dependencies
-├── documents/            # Documentation and diagrams
-│   ├── architecture-diagram.png
-│   └── kafka-flow-diagram.png
-└── README.md            # This file
-```
 
 ## 🎯 Usage
 
